@@ -1,0 +1,140 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+  
+  /* Add some content at the bottom of the video/page */
+  .vidcontent {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+
+
+
+
+body {
+    margin: 0 0 0 0;
+    font-family: 'Poppins', 'Arial', 'Helvetica';
+   }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    height: 85px;
+    padding: 0 10px 0 10px;
+  }
+  
+  .logo {
+    width:75px;
+    // background-color: teal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+  }
+  
+  .logo img {
+    width: 60px;
+  }
+  
+  .header-title {
+    width:calc(100% - 160px);
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 5px 0 5px;
+  }
+  
+ 
+  .content {
+    text-align: center;
+    width:100%;
+    height:100vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .message {
+    display: inline-block;
+    text-align: left;
+    margin-top: 6vh;
+    width: 80%;
+    max-width: 400px;
+    font-size: 20px;
+    line-height: 1.4em;
+  }
+  
+  .message .summary {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .message div {
+      margin-bottom: 15px;
+  
+  }
+  
+  @media screen and (min-width: 500px){
+    .message {
+      max-width: 600px;
+    }
+  }
+  
